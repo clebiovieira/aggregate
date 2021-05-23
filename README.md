@@ -1,8 +1,8 @@
 ![Java CI with Maven](https://github.com/clebiovieira/talkdesk-aggregate/workflows/Java%20CI%20with%20Maven/badge.svg)
 
-##Swagger
-####http://localhost:8080/swagger-ui
-####http://localhost:8080/v2/api-docs
+## Swagger
+#### http://localhost:8080/swagger-ui
+#### http://localhost:8080/v2/api-docs
 
 
 # Problem: phone number information aggregator
