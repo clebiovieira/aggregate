@@ -1,4 +1,4 @@
-![Java CI with Maven](https://github.com/clebiovieira/talkdesk-aggregate/workflows/Java%20CI%20with%20Maven/badge.svg)
+![Java CI with Maven](https://github.com/clebiovieira/aggregate/workflows/main.yml/badge.svg)
 
 
 # Problem: phone number information aggregator
