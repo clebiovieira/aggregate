@@ -1,4 +1,4 @@
-![Java CI with Maven](https://github.com/clebiovieira/talkdesk-aggregate/workflows/Java%20CI%20with%20Maven/badge.svg)
+![Java CI with Maven](https://github.com/clebiovieira/talkdesk/workflows/Java%20CI%20with%20Maven/badge.svg)
 
 ## Swagger
 #### http://localhost:8080/swagger-ui
