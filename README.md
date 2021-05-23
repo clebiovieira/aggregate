@@ -1,7 +1,11 @@
 ![Java CI with Maven](https://github.com/clebiovieira/talkdesk-aggregate/workflows/Java%20CI%20with%20Maven/badge.svg)
 
-# Problem: phone number information aggregator
+##Swagger
+####http://localhost:8080/swagger-ui
+####http://localhost:8080/v2/api-docs
 
+
+# Problem: phone number information aggregator
 The goal of this exercise is to build a phone information aggregator API. This
 system takes a list of phone numbers obtained from user input and returns the
 count of valid phones broken down per prefix and per business sector.
@@ -207,20 +211,3 @@ The API should return:
 }
 
 ```
-
-
-### Docker
-
-Through this route, please submit a tgz or zip with the project directory.
-Running `docker-compose up web` on the project's root must start a web server
-on port `8080` and be reachable on the host machine through
-`http://localhost:8080`. To get started with docker / docker compose, we
-recommend [this page](https://docs.docker.com/compose/gettingstarted/).
-
-
-## What happens after you submit the exercise
-
-Part of this exercise's grading will be done through automatic tests. To make
-sure the inputs and outputs of the API match the test's expectations, we have
-bundled a simple `validate.sh` script that will exercise the interface and do a
-basic test.

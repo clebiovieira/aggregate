@@ -8,14 +8,19 @@ import java.time.Instant;
 import java.util.Optional;
 import java.util.stream.Stream;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.challenge.aggregate.config.ServerConfig;
+
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-@Service
 @Slf4j
+@Service
+@RequiredArgsConstructor(onConstructor_ = @Autowired)
 public class PrefixDataServiceImpl implements PrefixDataService {
-	private static final String TEXT_FILE_PATH = "prefixes.txt";
+	private final ServerConfig serverConfig;
 
 	/**
 	 * <p>Verify and retrieve a prefix phone number, it should belong a deterministic text file, otherwise Optional Empty</p>
@@ -32,7 +37,7 @@ public class PrefixDataServiceImpl implements PrefixDataService {
 		for (int i = 1; i < phoneNumber.length(); i++) {
 			final String prefix = phoneNumber.substring(0, (phoneNumber.length() - i));
 
-			if (findPrefixInTextFile(TEXT_FILE_PATH, prefix)) {
+			if (findPrefixInTextFile(serverConfig.getTextDatabase(), prefix)) {
 
 				log.info("Prefix found: {} - Time Elapsed {}", prefix, Duration.between(start, Instant.now()).toMillis());
 				return Optional.of(prefix);
