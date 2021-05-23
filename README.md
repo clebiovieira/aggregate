@@ -1,4 +1,8 @@
-![Java CI with Maven](https://github.com/clebiovieira/aggregate/workflows/main.yml/badge.svg)
+![Java CI with Maven](https://github.com/clebiovieira/talkdesk-aggregate/workflows/Java%20CI%20with%20Maven/badge.svg)
+
+##Swagger
+####http://localhost:8080/swagger-ui
+####http://localhost:8080/v2/api-docs
 
 
 # Problem: phone number information aggregator
@@ -12,13 +16,6 @@ one for Bank of America with prefix `+1`, one for Quebramar with prefix
 should return a count of 1 phone for Technology, and 1 phone for Banking
 associated with the `+1` prefix, and a count of 2 phones for Clothing associated
 with the `+3519173` prefix.
-
-## Swagger
-
-http://localhost:8080/swagger-ui
-
-http://localhost:8080/v2/api-docs
-
 
 i.e.
 ```
